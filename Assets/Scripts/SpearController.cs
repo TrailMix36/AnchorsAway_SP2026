@@ -18,9 +18,11 @@ public class SpearController : MonoBehaviour
         animator.SetTrigger("Spear");
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider collision)
     {
-        
+        if (collision.gameObject.CompareTag("Fish"))
+        {
+            collision.gameObject.SetActive(false);
+        }
     }
 }

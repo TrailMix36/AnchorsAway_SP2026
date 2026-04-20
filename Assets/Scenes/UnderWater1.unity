@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: fish_2_v1
       objectReference: {fileID: 0}
+    - target: {fileID: 2576910639401555240, guid: 38453c08482feef46925c63d2e9e6598, type: 3}
+      propertyPath: m_TagString
+      value: Fish
+      objectReference: {fileID: 0}
     - target: {fileID: 2920819921564995474, guid: 38453c08482feef46925c63d2e9e6598, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.51
@@ -327,6 +331,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: fish_2_v1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2576910639401555240, guid: 38453c08482feef46925c63d2e9e6598, type: 3}
+      propertyPath: m_TagString
+      value: Fish
+      objectReference: {fileID: 0}
     - target: {fileID: 2920819921564995474, guid: 38453c08482feef46925c63d2e9e6598, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.67
@@ -423,6 +431,10 @@ PrefabInstance:
     - target: {fileID: 7816992470260410406, guid: 775ea8698569bbf4d966f73d07ad223e, type: 3}
       propertyPath: m_Name
       value: Fish_6_v5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7816992470260410406, guid: 775ea8698569bbf4d966f73d07ad223e, type: 3}
+      propertyPath: m_TagString
+      value: Fish
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1027,6 +1039,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: fish_5_v3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7650386223559316868, guid: dc39d348738f9b74a82210464bd7ad1f, type: 3}
+      propertyPath: m_TagString
+      value: Fish
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1219,6 +1235,10 @@ PrefabInstance:
     - target: {fileID: 2268273390139679429, guid: 2502d9e07e804c645ac5cefc0b76dc95, type: 3}
       propertyPath: m_Name
       value: Fish_4_v3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268273390139679429, guid: 2502d9e07e804c645ac5cefc0b76dc95, type: 3}
+      propertyPath: m_TagString
+      value: Fish
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1474,6 +1494,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fish_6_v5 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7816992470260410406, guid: 775ea8698569bbf4d966f73d07ad223e, type: 3}
+      propertyPath: m_TagString
+      value: Fish
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1718,6 +1742,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: fish_1_v2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8597350964962157123, guid: 89ef20cba947588498183032bb77f881, type: 3}
+      propertyPath: m_TagString
+      value: Fish
+      objectReference: {fileID: 0}
     - target: {fileID: 8936335225560905977, guid: 89ef20cba947588498183032bb77f881, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.48
@@ -1848,6 +1876,10 @@ PrefabInstance:
     - target: {fileID: 8597350964962157123, guid: 89ef20cba947588498183032bb77f881, type: 3}
       propertyPath: m_Name
       value: fish_1_v2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597350964962157123, guid: 89ef20cba947588498183032bb77f881, type: 3}
+      propertyPath: m_TagString
+      value: Fish
       objectReference: {fileID: 0}
     - target: {fileID: 8936335225560905977, guid: 89ef20cba947588498183032bb77f881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2087,6 +2119,10 @@ PrefabInstance:
     - target: {fileID: 2268273390139679429, guid: 2502d9e07e804c645ac5cefc0b76dc95, type: 3}
       propertyPath: m_Name
       value: Fish_4_v3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268273390139679429, guid: 2502d9e07e804c645ac5cefc0b76dc95, type: 3}
+      propertyPath: m_TagString
+      value: Fish
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2404,6 +2440,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fish_3_v5 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8493840036283115555, guid: e2622e4e3e376af45ab42626f4cf0734, type: 3}
+      propertyPath: m_TagString
+      value: Fish
+      objectReference: {fileID: 0}
     - target: {fileID: 9127668543974093465, guid: e2622e4e3e376af45ab42626f4cf0734, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.67
@@ -2659,6 +2699,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: fish_5_v3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7650386223559316868, guid: dc39d348738f9b74a82210464bd7ad1f, type: 3}
+      propertyPath: m_TagString
+      value: Fish
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2749,6 +2793,10 @@ PrefabInstance:
     - target: {fileID: 8597350964962157123, guid: 89ef20cba947588498183032bb77f881, type: 3}
       propertyPath: m_Name
       value: fish_1_v2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597350964962157123, guid: 89ef20cba947588498183032bb77f881, type: 3}
+      propertyPath: m_TagString
+      value: Fish
       objectReference: {fileID: 0}
     - target: {fileID: 8936335225560905977, guid: 89ef20cba947588498183032bb77f881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3422,6 +3470,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: fish_2_v1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2576910639401555240, guid: 38453c08482feef46925c63d2e9e6598, type: 3}
+      propertyPath: m_TagString
+      value: Fish
+      objectReference: {fileID: 0}
     - target: {fileID: 2920819921564995474, guid: 38453c08482feef46925c63d2e9e6598, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.33
@@ -3819,6 +3871,10 @@ PrefabInstance:
     - target: {fileID: 8493840036283115555, guid: e2622e4e3e376af45ab42626f4cf0734, type: 3}
       propertyPath: m_Name
       value: Fish_3_v5 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493840036283115555, guid: e2622e4e3e376af45ab42626f4cf0734, type: 3}
+      propertyPath: m_TagString
+      value: Fish
       objectReference: {fileID: 0}
     - target: {fileID: 9127668543974093465, guid: e2622e4e3e376af45ab42626f4cf0734, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4353,6 +4409,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fish_6_v5 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7816992470260410406, guid: 775ea8698569bbf4d966f73d07ad223e, type: 3}
+      propertyPath: m_TagString
+      value: Fish
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4735,6 +4795,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: fish_5_v3
       objectReference: {fileID: 0}
+    - target: {fileID: 7650386223559316868, guid: dc39d348738f9b74a82210464bd7ad1f, type: 3}
+      propertyPath: m_TagString
+      value: Fish
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4756,6 +4820,10 @@ PrefabInstance:
     - target: {fileID: 8493840036283115555, guid: e2622e4e3e376af45ab42626f4cf0734, type: 3}
       propertyPath: m_Name
       value: Fish_3_v5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493840036283115555, guid: e2622e4e3e376af45ab42626f4cf0734, type: 3}
+      propertyPath: m_TagString
+      value: Fish
       objectReference: {fileID: 0}
     - target: {fileID: 9127668543974093465, guid: e2622e4e3e376af45ab42626f4cf0734, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5001,6 +5069,10 @@ PrefabInstance:
     - target: {fileID: 2268273390139679429, guid: 2502d9e07e804c645ac5cefc0b76dc95, type: 3}
       propertyPath: m_Name
       value: Fish_4_v3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268273390139679429, guid: 2502d9e07e804c645ac5cefc0b76dc95, type: 3}
+      propertyPath: m_TagString
+      value: Fish
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -1186,6 +1186,7 @@ GameObject:
   - component: {fileID: 484007867091482304}
   - component: {fileID: 6911691845441614478}
   - component: {fileID: 7217629333871379724}
+  - component: {fileID: 6042208592816516548}
   m_Layer: 0
   m_Name: fish_1_v2
   m_TagString: Untagged
@@ -1270,3 +1271,24 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   range: 20
+--- !u!65 &6042208592816516548
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8597350964962157123}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.99998814, y: 2.9497569, z: 5.96561}
+  m_Center: {x: 0, y: 0.9748802, z: -0.5468105}

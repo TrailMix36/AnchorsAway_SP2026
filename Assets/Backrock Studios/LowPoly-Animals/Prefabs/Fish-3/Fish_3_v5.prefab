@@ -860,6 +860,7 @@ GameObject:
   - component: {fileID: 9127668543974093465}
   - component: {fileID: 4511127342594834959}
   - component: {fileID: 7229316266375868686}
+  - component: {fileID: 2141512503642896409}
   m_Layer: 0
   m_Name: Fish_3_v5
   m_TagString: Untagged
@@ -922,6 +923,27 @@ NavMeshAgent:
   m_BaseOffset: 0.1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &2141512503642896409
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8493840036283115555}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.028073233, y: 0.12283448, z: 0.10396762}
+  m_Center: {x: -0.0012950457, y: 0.001733357, z: -0.01855284}
 --- !u!1 &8738909963265227888
 GameObject:
   m_ObjectHideFlags: 0

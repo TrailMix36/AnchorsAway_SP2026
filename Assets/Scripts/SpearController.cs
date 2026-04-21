@@ -15,7 +15,11 @@ public class SpearController : MonoBehaviour
 
     private void Spear_performed(InputAction.CallbackContext obj)
     {
-        animator.SetTrigger("Spear");
+        if(animator != null)
+        {
+            animator.SetTrigger("Spear");
+        }
+        
     }
 
     private void OnTriggerEnter(Collider collision)

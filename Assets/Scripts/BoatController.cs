@@ -14,6 +14,10 @@ public class BoatController : MonoBehaviour
     private float forwardInput;
     private float horizontalInput;
     private InputAction move;
+    private InputAction inventory;
+    private InputAction menu;
+    [SerializeField] private GameObject menuObj;
+    [SerializeField] private GameObject invobj;
     [SerializeField] private int speed;
     [SerializeField] private int turnSpeed;
     /// <summary>
@@ -21,10 +25,33 @@ public class BoatController : MonoBehaviour
     /// </summary>
     void Start()
     {
+        menu = InputSystem.actions.FindAction("Menu");
+        inventory = InputSystem.actions.FindAction("Inventory");
         move = InputSystem.actions.FindAction("Move");
+        menu.performed += Menu_performed;
+        inventory.performed += Inventory_performed;
         move.performed += Move_Performed;
         move.canceled += Move_Canceled;
     }
+
+    private void Menu_performed(InputAction.CallbackContext obj)
+    {
+        if(menuObj != null)
+        {
+            menuObj.SetActive(!menuObj.activeSelf);
+        }
+        
+    }
+
+    private void Inventory_performed(InputAction.CallbackContext obj)
+    {
+        if(invobj != null)
+        {
+            invobj.SetActive(!invobj.activeSelf);
+        }
+       
+    }
+
     /// <summary>
     /// sets the horizontal and forward input to 0 when not pressing a move key
     /// </summary>

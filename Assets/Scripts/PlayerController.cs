@@ -16,10 +16,12 @@ public class PlayerController : MonoBehaviour
     private InputAction locked;
     private Vector3 playerMovement;
     private Rigidbody rb;
+    private InputAction menu;
+    [SerializeField] private GameObject menuObj;
 
     [SerializeField] private float playerSpeed;
     [SerializeField] private float jumpValue;
-    [SerializeField] private float mouseSensitivity = 150f;
+    [SerializeField] private float mouseSensitivity;
 
     [SerializeField] private Transform cameraTarget;
 
@@ -32,6 +34,8 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
 
+        menu = InputSystem.actions.FindAction("Menu");
+
         move = InputSystem.actions.FindAction("Move");
         
         look = InputSystem.actions.FindAction("Look");
@@ -40,8 +44,8 @@ public class PlayerController : MonoBehaviour
 
         move.performed += MovePerformed;
         move.canceled += MoveCanceled;
+        menu.performed += Menu_performed;
 
-        
 
         look.performed += LookPerformed;
         look.canceled += LookCanceled;
@@ -65,7 +69,18 @@ public class PlayerController : MonoBehaviour
             LockCursor();
         }
     }
+    /// <summary>
+    /// Opens and closes the menu when you press escape
+    /// </summary>
+    /// <param name="obj"></param>
+    private void Menu_performed(InputAction.CallbackContext obj)
+    {
+        if (menuObj != null)
+        {
+            menuObj.SetActive(!menuObj.activeSelf);
+        }
 
+    }
     /// <summary>
     /// assigns the vector 2 from the look action to the look input variable
     /// </summary>

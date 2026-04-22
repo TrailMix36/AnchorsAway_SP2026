@@ -1,4 +1,11 @@
-using Unity.VisualScripting;
+/*****************************************************************************
+// File Name : CreatureController.cs
+// Author : Simon Bruening-Wright
+// Creation Date : 4/21/2026
+//
+// Brief Description : Controls the fish AI
+*****************************************************************************/
+
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -10,18 +17,25 @@ public class CreatureController : MonoBehaviour
     private Vector3 destPoint;
     private bool walkPointSet;
     [SerializeField] private float range;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    /// <summary>
+    /// Assigns components to objects
+    /// </summary>
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.Find("Player");
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// Calls the patrol function each frame
+    /// </summary>
     void Update()
     {
         Patrol();
     }
+    /// <summary>
+    /// Sets the AI navigation point
+    /// </summary>
     private void Patrol()
     {
         if (!walkPointSet)
@@ -37,7 +51,9 @@ public class CreatureController : MonoBehaviour
             walkPointSet = false;
         }
     }
-    
+    /// <summary>
+    /// Finds a random Navigation point and gives it to the patrol function
+    /// </summary>
     private void SearchForDest()
     {
         float z = Random.Range(-range, range);

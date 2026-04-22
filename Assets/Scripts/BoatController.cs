@@ -33,7 +33,10 @@ public class BoatController : MonoBehaviour
         move.performed += Move_Performed;
         move.canceled += Move_Canceled;
     }
-
+    /// <summary>
+    /// Opens and closes the menu when you press escape
+    /// </summary>
+    /// <param name="obj"></param>
     private void Menu_performed(InputAction.CallbackContext obj)
     {
         if(menuObj != null)
@@ -42,7 +45,10 @@ public class BoatController : MonoBehaviour
         }
         
     }
-
+    /// <summary>
+    /// Opens and closes the inventory when you press Tab
+    /// </summary>
+    /// <param name="obj"></param>
     private void Inventory_performed(InputAction.CallbackContext obj)
     {
         if(invobj != null)

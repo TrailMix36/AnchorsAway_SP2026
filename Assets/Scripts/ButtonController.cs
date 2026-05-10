@@ -20,7 +20,7 @@ public class ButtonController : MonoBehaviour
     {
          
         Button button = GetComponent<Button>();
-        if (button != null && SceneManager.GetActiveScene().buildIndex == 0)
+        if (button != null && SceneManager.GetActiveScene().buildIndex == 1)
         {
             // Add a runtime listener that calls the singleton's function
             button.onClick.AddListener(() => GameManager.Instance.Dive());

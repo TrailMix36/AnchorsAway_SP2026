@@ -8,6 +8,7 @@
 
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class BoatController : MonoBehaviour
 {
@@ -85,5 +86,12 @@ public class BoatController : MonoBehaviour
         transform.Translate(Vector3.forward * forwardInput * Time.deltaTime * speed);
         transform.Rotate(Vector3.up * Time.deltaTime * horizontalInput * turnSpeed);
 
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }

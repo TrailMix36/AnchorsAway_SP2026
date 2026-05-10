@@ -13,11 +13,13 @@ public class SpearController : MonoBehaviour
 {
     private InputAction spear;
     private Animator animator;
+    
     /// <summary>
     /// Assigns input actions and components
     /// </summary>
     void Start()
     {
+         
         animator = GetComponent<Animator>();
         spear = InputSystem.actions.FindAction("Spear");
         spear.performed += Spear_performed;
@@ -42,6 +44,7 @@ public class SpearController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Fish"))
         {
+            GameManager.Instance.AddFish();
             collision.gameObject.SetActive(false);
         }
     }

@@ -6,6 +6,7 @@ public class ScoreDisplay : MonoBehaviour
     [SerializeField] private TMP_Text fishText;
     [SerializeField] private TMP_Text moneyText;
     [SerializeField] private TMP_Text debtText;
+    [SerializeField] private GameObject winScreen;
     private int fish;
     private int money;
     private int debt;
@@ -26,5 +27,9 @@ public class ScoreDisplay : MonoBehaviour
         fishText.text = "Fish: " + fish.ToString();
         moneyText.text = "Money: " + money.ToString();
         debtText.text = "Debt: " + debt.ToString();
+        if(debt == 0)
+        {
+            winScreen.SetActive(true);
+        }
     }
 }

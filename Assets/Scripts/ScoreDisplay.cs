@@ -1,3 +1,11 @@
+/*****************************************************************************
+// File Name : ScoreDisplay.cs
+// Author : Simon Bruening-Wright
+// Creation Date : 5/10/2026
+//
+// Brief Description : Gets the fish, money, and debt variables from the game manager and puts them on the screen
+*****************************************************************************/
+
 using TMPro;
 using UnityEngine;
 
@@ -10,7 +18,9 @@ public class ScoreDisplay : MonoBehaviour
     private int fish;
     private int money;
     private int debt;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    /// <summary>
+    /// sets the text variables
+    /// </summary>
     void Start()
     {
         fishText = GameObject.Find("Fish").GetComponent<TMP_Text>();
@@ -18,7 +28,9 @@ public class ScoreDisplay : MonoBehaviour
         debtText = GameObject.Find("Debt").GetComponent<TMP_Text>();
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// Updates the text on screen and checks for the win condition
+    /// </summary>
     void Update()
     {
         fish = GameManager.Fish;

@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 
-using Unity.VisualScripting;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
@@ -33,11 +33,6 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
         }
     }
-
-    private void Start()
-    {
-        
-    }
     /// <summary>
     /// Changes the scene to underwater
     /// </summary>
@@ -54,17 +49,24 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(1);
         
     }
-
+    /// <summary>
+    /// Adds a fish to your total
+    /// </summary>
     public void AddFish()
     {
         Fish ++;
     }
+    /// <summary>
+    /// Adds money equal to your fish and removes your fish
+    /// </summary>
     public void SellFish()
     {
         Money += Fish;
         Fish = 0;
     }
-
+    /// <summary>
+    /// Uses your money to pay off some or all of your debt
+    /// </summary>
     public void PayDebt()
     {
         if(Debt >= Money)

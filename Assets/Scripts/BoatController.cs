@@ -3,7 +3,7 @@
 // Author : Simon Bruening-Wright
 // Creation Date : 3/26/2026
 //
-// Brief Description : Controls the boats movement
+// Brief Description : Controls the boats movement And the menu and inventory
 *****************************************************************************/
 
 using UnityEngine;
@@ -87,6 +87,10 @@ public class BoatController : MonoBehaviour
         transform.Rotate(Vector3.up * Time.deltaTime * horizontalInput * turnSpeed);
 
     }
+    /// <summary>
+    /// Checks for if you hit a wall and reloads the scene if you do
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Wall"))

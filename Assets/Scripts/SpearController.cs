@@ -37,7 +37,7 @@ public class SpearController : MonoBehaviour
         
     }
     /// <summary>
-    /// Deactivates fish when they are speared
+    /// Deactivates fish when they are speared and calls the AddFish function from the GameManager
     /// </summary>
     /// <param name="collision"></param>
     private void OnTriggerEnter(Collider collision)
